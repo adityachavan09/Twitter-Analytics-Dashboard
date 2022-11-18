@@ -13,5 +13,5 @@ class FetchTweets:
 
     def fetchtweets(self):
         # fetching tweets
-        new_tweets = self.api.search_tweets(q="FIFA", count=50, result_type="recent", tweet_mode="extended")
+        new_tweets = self.api.search_tweets(q="FIFA2022", count=1, result_type="recent", lang="en")
         return new_tweets

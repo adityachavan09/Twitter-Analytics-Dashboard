@@ -1,6 +1,9 @@
 from nltk.corpus import stopwords
 from textblob import TextBlob
 
+# SentimentAnalyzer
+
+#  analyze_tweet
 
 def clean_text(text):
   ex_list = ['rt', 'http', 'RT']

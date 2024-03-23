@@ -1,10 +1,15 @@
 # twitter API credentials
 import pandas as pd
+import os
+from dotenv import load_dotenv
 
-consumer_key = 'HhPnaHmHjgYtnQ5kgtROO751y'
-consumer_secret = 'Gf4PNwrtCQrCtmgKM046WB5wzgAwi5g6wFvOWXvy427GQcnHd6'
-access_token = '964409866902122496-58zNwrlXJ2ZMxE7ufCJto1tnueoxiRj'
-access_secret = 'Ytcl2GJg6p7ZV4GGMMI5gVFSwuQY8zZp7JeKB8OYNdoPd'
+load_dotenv()
+
+# Access the environment variables
+consumer_key = os.getenv('CONSUMER_KEY')
+consumer_secret = os.getenv('CONSUMER_SECRET')
+access_token = os.getenv('ACCESS_TOKEN')
+access_secret = os.getenv('ACCESS_SECRET')
 conn_string='postgresql://aditya:aditya@localhost:5432/FIFA2022'
 hashtag = "USC"
 maxId = -1
